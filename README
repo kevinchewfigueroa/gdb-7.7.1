@@ -1,4 +1,19 @@
-		   README for GNU development tools
+Warnings are being returned in regards to missing dependencies and preventing successful makes:
+
+makeinfo
+No curses library functions found
+You can install makeinfo by running:
+sudo apt-get install texinfo
+NOTE: that is not a typo, there is only one t in texinfo
+
+You can install missing curses library functions by running:
+sudo apt-get install libncurses5-dev libncursesw5-dev
+
+You will then need to reclone the gdb-7.7.1. Simply running ./configure again does not update the configuration.
+with the added dependencies. From here follow the remaining instructions in the README.
+
+
+README for GNU development tools
 
 This directory contains various GNU compilers, assemblers, linkers, 
 debuggers, etc., plus their support routines, definitions, and documentation.
